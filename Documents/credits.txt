@@ -1,0 +1,27 @@
+javascript factory http://www.dofactory.com/javascript/factory-method-design-pattern
+
+for the main menu - https://codepen.io/ravenous/pen/sdAqm
+
+  <div class="wrapper">
+            <header>CRM
+                <p>by Michal Yosef</p>
+            </header>
+            <main>
+                <nav role='navigation' id="mainNav">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Leads</a></li>
+                        <li><a href="#">Prospects</a></li>
+                        <li><a href="#">Custumers</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Professions</a></li>
+                    </ul>
+                </nav>
+            </main>
+
+            <fieldset>
+    <legend>Personalia:</legend>
+    Name: <input type="text"><br>
+    Email: <input type="text"><br>
+    Date of birth: <input type="text">
+  </fieldset>
