@@ -1,6 +1,6 @@
 <?php
 
-class baseCrmPerson implements IBaseCrmObj
+abstract class baseCrmPerson
 {
 
     private $id;
@@ -9,11 +9,24 @@ class baseCrmPerson implements IBaseCrmObj
     private $tblName;
     private $BLL;
 
+  
+    abstract public function getSelfDataObj()
+    {
+        
+    }
+
+
+    public function create();
+    public function update();
+    public function select();
+    public function delete();
+
+
     public function __construct(    $tblName, 
                                     $name, 
                                     $phone,
                                     $BLL,
-                                    $id=0 // in case we get it from the client
+                                    $id=0 // in case we get it from DB
                                     )
     {
         $this-> $id = $id;
@@ -23,7 +36,7 @@ class baseCrmPerson implements IBaseCrmObj
         $this-> $BLL = $BLL;
     }
 
-    static function getAll() // TODO: remove from here Implement in every inheriting class
+    static function getAll() 
     {
         try
         {
@@ -33,8 +46,21 @@ class baseCrmPerson implements IBaseCrmObj
         {
             notify::Error( $e->getMessage() );
 
+        }    
+    }
+
+    
+    static function create() 
+    {
+        try
+        {
+            return  $BLL->insert( $this-> $tblName );
         }
-        
+        catch( $e )
+        {
+            notify::Error( $e->getMessage() );
+
+        }    
     }
 
 

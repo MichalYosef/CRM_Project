@@ -1,6 +1,6 @@
 <?php
 
-class lead extends baseCrmPerson
+class Lead extends baseCrmPerson
 {
     public function __construct()
     {
