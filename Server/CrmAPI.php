@@ -1,6 +1,6 @@
 <?php
 
-require_once "IBaseCrmObj";
+require_once "../Classes/IBaseCrmObj";
 
 class CrmAPI
 {

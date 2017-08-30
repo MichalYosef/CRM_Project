@@ -2,23 +2,14 @@ javascript factory http://www.dofactory.com/javascript/factory-method-design-pat
 
 for the main menu - https://codepen.io/ravenous/pen/sdAqm
 
-  <div class="wrapper">
-            <header>CRM
-                <p>by Michal Yosef</p>
-            </header>
-            <main>
-                <nav role='navigation' id="mainNav">
-                    <ul>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Leads</a></li>
-                        <li><a href="#">Prospects</a></li>
-                        <li><a href="#">Custumers</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Professions</a></li>
-                    </ul>
-                </nav>
-            </main>
+javascript command pattern http://www.dofactory.com/javascript/command-design-pattern
 
+Dependency Injection container http://krasimirtsonev.com/blog/article/Dependency-Injection-in-PHP-example-how-to-DI-create-your-own-dependency-injection-container
+
+
+
+
+ TODO: dont forget to use:
             <fieldset>
     <legend>Personalia:</legend>
     Name: <input type="text"><br>
