@@ -18,12 +18,38 @@ function Customer(  customer_name,
 
         alert("runValidation"); 
     }
-/*
-    this.select()
-    
-    this.update()
-    this.delete()
-    this.create()
-    
-*/
+
+
 }
+
+Customer.show = function() {
+  /* 
+  $.ajax(app.screensApi).done(function(data) {
+    if (app.debugMode) {
+        console.log("screensApi response");
+        console.log(data);
+    }
+    data = JSON.parse(data);
+    // step 1
+    for(let i=0; i < data.length; i++) {
+        screensArray.push(new Screen(
+            data[i].manufacturer,
+            data[i].price,  
+            data[i].model,
+            data[i].size
+        ));
+    }
+    
+  $.ajax('templates/screen-template.html')
+    .done(function(data) {
+        for(let i=0; i < screensArray.length; i++) {
+            let template = data;
+            template = template.replace("{{manufacturer}}", screensArray[i].manufacturer);
+            template = template.replace("{{price}}", screensArray[i].price);
+            template = template.replace("{{model}}", screensArray[i].model);
+            template = template.replace("{{size}}", screensArray[i].size);
+
+            $('.screens').append(template);
+        }
+    });*/
+  }
